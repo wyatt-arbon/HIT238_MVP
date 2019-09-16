@@ -7,14 +7,14 @@ const newTr = `
   <td><button type="button" onclick="DeleteRowFunction(this)" >Remove</button></td>
 </tr>`;
 
-$('.btn_Add').on('click', () => {
-  $('tbody').append(newTr);
-});
+
 
 //$tableID.on('click', '.btn_Remove', function () {
 //  $('tbody').append(newTr);
 // });
-
+function AddRowFunction(){
+  $('tbody').append(newTr);
+}
  function DeleteRowFunction(o) {
      //no clue what to put here?
      var p=o.parentNode.parentNode;
