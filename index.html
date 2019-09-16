@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Schedual app</title>
+    <link rel=stylesheet type="text/css" href = "style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Schedule</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Hours</th>
+          <th <span>Mon</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="time" name="mon start time" /></td>
+          <td><input type="text" name="event discription" /></td>
+          <td><button class ="btn_Remove" type="button" onclick="DeleteRowFunction(this)">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class = "btn_Add" type="button" >Add</button>
+  </body>
+  <script src="script.js"></script>
+</html>

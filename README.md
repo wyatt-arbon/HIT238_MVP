@@ -1,2 +1,2 @@
-# HIT234_MVP
+# HIT238_MVP
 Scheduled app MVP
