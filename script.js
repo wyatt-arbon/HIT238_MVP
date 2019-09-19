@@ -1,5 +1,5 @@
 
-
+const $tableID = $('#table');
 const newTr = `
 <tr class="hide">
   <td><input type="time" name="mon start time" /></td>
@@ -8,20 +8,20 @@ const newTr = `
 </tr>`;
 
 
-
-//$tableID.on('click', '.btn_Remove', function () {
+//$tableID.on('click', '.btn_Add', function () {
 //  $('tbody').append(newTr);
-// });
-function AddRow(tableID){
-  let tableRef = document.getElementById(tableID);
-  let newRow = tableRef.insertRow(-1);
-  let newCell = newRow.insertCell(0);
-  let newText = document.createTimeNode("");
-  newCell.append(newText);
-}
+//});
+//function AddRow(tableID){
+//  let tableRef = document.getElementById(tableID);
+//  let newRow = tableRef.insertRow(-1);
+//  let newCell = newRow.insertCell(0);
+//  let newText = document.createTimeNode("");
+//  newCell.append(newText);
+//}
 
 function AddRowFunction(){
-  AddRow("my-table");
+//  AddRow("my-table");
+  $('tbody').append(newTr);
 }
 
  function DeleteRowFunction(o) {
