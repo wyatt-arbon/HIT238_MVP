@@ -31,6 +31,13 @@ function deleteRow(){
   document.getElementById("time").value = "";
   document.getElementById("discription").value = "";
 }
+
+function editRow(){
+    var time = document.getElementById("time").value,
+        discription = document.getElementById("discription").value;
+    table.rows[rowNum].cells[0].innerHTML = time;
+    table.rows[rowNum].cells[1].innerHTML = discription;
+}
 /*
 const $tableID = $('#table');
 const newTr = `
