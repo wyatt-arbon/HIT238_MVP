@@ -1,3 +1,13 @@
 .tableMain th, td{
   border: 1px solid black;
 }
+
+.tables{float: left;}
+.tableInput{
+  margin-left: 50px;
+
+}
+.tableInput input{
+  display: block;
+  margin-bottom: 10px
+}
