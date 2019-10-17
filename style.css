@@ -11,3 +11,6 @@
   display: block;
   margin-bottom: 10px
 }
+  tr:hover{
+    background-color:#9FB6CD;
+    }
