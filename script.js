@@ -1,3 +1,18 @@
+
+function addRow()
+{
+    var newRow = table.insertRow(table.length),
+        cell1 = newRow.insertCell(0),
+        cell2 = newRow.insertCell(1),
+        time = document.getElementById("time").value,
+        discription = document.getElementById("discription").value;
+
+    cell1.innerHTML = time;
+    cell2.innerHTML = discription;
+
+
+}
+
 /*
 const $tableID = $('#table');
 const newTr = `
