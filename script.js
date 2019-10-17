@@ -9,7 +9,7 @@ function addRow()
 
     cell1.innerHTML = time;
     cell2.innerHTML = discription;
-
+    selectRow()
 
 }
 
