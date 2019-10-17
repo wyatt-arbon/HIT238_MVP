@@ -13,6 +13,20 @@ function addRow()
 
 }
 
+function selectRow(){
+  var rowNum,
+    table = document.getElementById("table");
+  for(var i = 1; i < table.rows.length; i++)
+  {
+      table.rows[i].onclick = function()
+      {
+        rowNum = this.rowIndex;
+        document.getElementById("time").value = this.cells[0].innerHTML;
+        document.getElementById("discription").value = this.cells[1].innerHTML;
+      };
+  }
+}
+selectRow()
 /*
 const $tableID = $('#table');
 const newTr = `
