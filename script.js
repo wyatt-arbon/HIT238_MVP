@@ -1,4 +1,4 @@
-
+var rowNum,table = document.getElementById("table");
 function addRow()
 {
     var newRow = table.insertRow(table.length),
@@ -14,8 +14,6 @@ function addRow()
 }
 
 function selectRow(){
-  var rowNum,
-    table = document.getElementById("table");
   for(var i = 1; i < table.rows.length; i++)
   {
       table.rows[i].onclick = function()
@@ -27,6 +25,12 @@ function selectRow(){
   }
 }
 selectRow()
+
+function deleteRow(){
+  table.deleteRow(rowNum);
+  document.getElementById("time").value = "";
+  document.getElementById("discription").value = "";
+}
 /*
 const $tableID = $('#table');
 const newTr = `
