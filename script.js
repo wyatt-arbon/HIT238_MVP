@@ -1,4 +1,4 @@
-
+/*
 const $tableID = $('#table');
 const newTr = `
 <tr class="hide">
@@ -28,3 +28,4 @@ function AddRowFunction(){
      var p=o.parentNode.parentNode;
          p.parentNode.removeChild(p);
     }
+*/
